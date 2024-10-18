@@ -7,12 +7,12 @@ interface IAppProps {
      data: {
         _id: string;
         fullUrl: string;
-        shortUrl: string;
-        clicks: number;
+        shorturl: string;
+        click: number;
         createdAt: Date;
         updatedAt: Date;
       
-       }
+       }[];
        pagereload: () => void;
 }
 

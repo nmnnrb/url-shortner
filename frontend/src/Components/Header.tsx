@@ -3,7 +3,7 @@ import * as React from 'react';
 interface IHeaderProps {
 }
 
-const Header: React.FunctionComponent<IHeaderProps> = (props) => {
+const Header: React.FunctionComponent<IHeaderProps> = () => {
   return(
     <div className="bg-sky-500 mt-1">
         <div className="container p-2 mx-auto ">
