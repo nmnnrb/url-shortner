@@ -15,7 +15,11 @@ export const createUrl = async (req:express.Request, res: express.Response) => {
             res.status(201).send({ ShortUrl });
         }
     } catch (error) {
-        res.status(500).send({"message": "Something Went Wrogn! "});
+        res.status(500).json({
+            success: false,
+            message: "Server error occurred",
+            error: error.message, // Send error message to understand the problem
+        });
     }
     
 }
