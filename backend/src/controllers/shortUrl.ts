@@ -15,11 +15,10 @@ export const createUrl = async (req:express.Request, res: express.Response) => {
             res.status(201).send({ ShortUrl });
         }
     } catch (error) {
-        res.status(500).json({
-            success: false,
-            message: "Server error occurred",
-            error: error.message, // Send error message to understand the problem
-        });
+    if (error instanceof Error) {
+        console.error("Error:", error.message);
+    } else {
+        console.error("Unknown error:", error);
     }
     
 }
@@ -36,7 +35,10 @@ export const getAllUrl = async (req:express.Request, res: express.Response) => {
         }
 
     } catch (error) {
-        res.status(500).send({"message": "Something Went Wrogn! "}); 
+    if (error instanceof Error) {
+        console.error("Error:", error.message);
+    } else {
+        console.error("Unknown error:", error);
     }
 }
 
@@ -55,7 +57,10 @@ export const getUrl = async (req:express.Request, res: express.Response) => {
             return res.redirect(`${shortUrl.fullUrl}`);
         } 
     } catch (error) {
-        res.status(500).send({"message": "Something Went Wrogn! "}); 
+    if (error instanceof Error) {
+        console.error("Error:", error.message);
+    } else {
+        console.error("Unknown error:", error);
     }
  
 }
@@ -69,6 +74,9 @@ export const deleteUrl = async (req:express.Request, res: express.Response) => {
             res.status(404).send({"message" : " URL found and deleted"})
         }
     } catch (error) {
-        res.status(500).send({"message": "Something Went Wrogn!"}); 
+    if (error instanceof Error) {
+        console.error("Error:", error.message);
+    } else {
+        console.error("Unknown error:", error);
     }
 }
