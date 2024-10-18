@@ -1,4 +1,9 @@
-<h1>URl-Shortener [MERN]  <a href="https://url-shortner-frontend-vb32.onrender.com/"> Live Site</a><h4> </h4> </h1>  <p>As this is hosted on free Server (It may happend that the server maybe down)</p>
+<h1>URl-Shortener [MERN]  <a href="https://url-shortner-frontend-vb32.onrender.com/"> Live Site</a></h1>
+<hr>
+<hr>
+<p>As this is hosted on free Server (It may happend that the server maybe down)</p>
+<hr>
+<hr>
 
 The URL Shortener project is a robust web application built from scratch with a strong focus on backend and frontend development, providing seamless API integration and smooth user experience. It allows users to shorten long URLs into compact, easily shareable links. The backend is meticulously designed to ensure efficiency and security, handling URL mapping, redirection, and data storage. It features a well-structured API that enables easy creation, retrieval, and management of shortened links.
 
